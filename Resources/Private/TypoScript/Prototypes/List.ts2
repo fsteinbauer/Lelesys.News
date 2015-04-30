@@ -50,11 +50,11 @@ prototype(Lelesys.News:List) {
 	}
 
 	# uncached the list view
-	@cache {
-		mode = 'uncached'
-		context {
-			1 = 'node'
-			2 = 'documentNode'
-		}
-	}
+	#@cache {
+	#	mode = 'uncached'
+	#	context {
+	#		1 = 'node'
+	#		2 = 'documentNode'
+	#	}
+	#}
 }
