@@ -38,9 +38,9 @@ Lelesys:
           maximumNumberOfLinks: 5
         sortProperty: 'dateTime'
         sortOrder: 'DESC'
-        dateFormat: 'F jS, Y'
+        dateFormat: 'd. F Y'
         thumbnailMaxWidth: 80
         thumbnailMaxHeight: 80
       single:
-        dateFormat: 'F jS, Y'
+        dateFormat: 'd. F Y'
 
