@@ -28,7 +28,7 @@ Lelesys:
           maximumNumberOfLinks: 15
         sortProperty: 'dateTime'
         sortOrder: 'DESC'
-        dateFormat: 'F jS, Y'
+        dateFormat: 'D. F Y'
         thumbnailMaxWidth: 80
         thumbnailMaxHeight: 80
       latest:
@@ -38,9 +38,9 @@ Lelesys:
           maximumNumberOfLinks: 5
         sortProperty: 'dateTime'
         sortOrder: 'DESC'
-        dateFormat: 'd. F Y'
+        dateFormat: 'D. F Y'
         thumbnailMaxWidth: 80
         thumbnailMaxHeight: 80
       single:
-        dateFormat: 'd. F Y'
+        dateFormat: 'D. F Y'
 
