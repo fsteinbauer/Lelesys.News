@@ -55,11 +55,11 @@
 
     newsImage:
       type: 'TYPO3\Media\Domain\Model\ImageVariant'
-        ui:
-          label: 'Title Image'
-          reloadIfChanged: TRUE
-          inspector:
-            group: 'news'
+      ui:
+        label: 'Title Image'
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'news'
             
     relatedNews:
       type: references
