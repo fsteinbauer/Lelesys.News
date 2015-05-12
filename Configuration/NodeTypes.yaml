@@ -52,44 +52,15 @@
         news:
           label: 'News'
   properties:
-    isAuthorBeUser:
-      type: boolean
-      ui:
-        label: 'Author is backend user'
-        reloadIfChanged: TRUE
-        inspector:
-          group: 'news'
-    authorName:
-      type: string
-      ui:
-        label: 'Author name'
-        reloadIfChanged: TRUE
-        inspector:
-          group: 'news'
-      validation:
-        'TYPO3.Neos/Validation/NotEmptyValidator': []
-        'TYPO3.Neos/Validation/StringLengthValidator':
-          minimum: 1
-          maximum: 255
-    authorEmail:
-      type: string
-      ui:
-        label: 'Author email'
-        reloadIfChanged: TRUE
-        inspector:
-          group: 'news'
-      validation:
-        'TYPO3.Neos/Validation/EmailAddressValidator': []
-    dateTime:
-      type: date
-      ui:
-        label: 'Date'
-        reloadIfChanged: TRUE
-        inspector:
-          group: 'news'
-      validation:
-        'TYPO3.Neos/Validation/NotEmptyValidator': []
-        'TYPO3.Neos/Validation/DateTimeValidator': []
+
+    newsImage:
+      type: 'TYPO3\Media\Domain\Model\ImageVariant'
+        ui:
+          label: 'Title Image'
+          reloadIfChanged: TRUE
+          inspector:
+            group: 'news'
+            
     relatedNews:
       type: references
       ui:
