@@ -3,11 +3,12 @@
 	<div class="col-sm-12 news-detail">
 		<header class="entry-header">
 
-			<f:if condition="{thumbnailImage}">
-				<figure class="typo3-neos-alignment-left">
-					<m:image asset="{thumbnailImage.properties.image}" maximumWidth="1140" />
-				</figure>
-			</f:if>
+			<f:if condition="{node.properties.newsImage}">
+                <figure class="typo3-neos-alignment-left">
+                    <m:image asset="{node.properties.newsImage}" maximumWidth="1140" alt=""/>
+                </figure>
+            </f:if>
+
 
 			<div class="sectiontitlepost">
 				<neos:contentElement.editable property="title" tag="h1" />
