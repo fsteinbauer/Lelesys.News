@@ -65,6 +65,7 @@
 			</f:else>
 		</f:if>
 		<f:if condition="{tags}">
+		<f:if condition="{tags.0} != ''">
 			<f:then>
 				<div class="tags">
 					<b><f:translate id="tags" package="Lelesys.News">Tags</f:translate>: </b>
@@ -73,6 +74,7 @@
 					</f:for>
 				</div>
 			</f:then>
+		</f:if>
 		</f:if>
 	</div>
 </neos:contentElement.wrap>
