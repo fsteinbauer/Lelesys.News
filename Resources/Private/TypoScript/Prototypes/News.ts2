@@ -14,7 +14,7 @@ prototype(Lelesys.News:News) {
 	main.nodePath = 'main'
 
 	# Text from the first text node is taken as short description shown on list/latest views
-	teaserText = ${q(node).children('main').children('[instanceof TYPO3.Neos.NodeTypes:Text]').property('text')}
+	teaserText = ${q(node).children('main').find('[instanceof TYPO3.Neos.NodeTypes:Text]').property('text')}
 
 	# split tags with comma seperated
 	tags = ${q(node).property('tags') != null ? String.split(q(node).property('tags'), ',') : null}
