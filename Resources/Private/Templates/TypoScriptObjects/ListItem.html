@@ -5,7 +5,9 @@
 <div class="news-list-item col-sm-4 col-md-4">
 	<f:if condition="{node.properties.newsImage}">
         <figure class="typo3-neos-alignment-top">
+        <neos:link.node node="{node}">
             <m:image asset="{node.properties.newsImage}"  maximumWidth="{configuration.thumbnailMaxWidth}" maximumHeight="{configuration.thumbnailMaxHeight}" alt=""/>
+        </neos:link.node>
         </figure>
     </f:if>
 	<h5><neos:link.node node="{node}">{title}</neos:link.node></h5>

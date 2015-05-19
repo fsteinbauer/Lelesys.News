@@ -29,7 +29,7 @@ Lelesys:
         sortProperty: 'dateTime'
         sortOrder: 'DESC'
         dateFormat: 'd. F Y'
-        thumbnailMaxWidth: 350
+        thumbnailMaxWidth: 390
         thumbnailMaxHeight: 9999
       latest:
         numberOfItems: 10
@@ -39,7 +39,7 @@ Lelesys:
         sortProperty: 'dateTime'
         sortOrder: 'DESC'
         dateFormat: 'd. F Y'
-        thumbnailMaxWidth: 350
+        thumbnailMaxWidth: 390
         thumbnailMaxHeight: 9999
       single:
         dateFormat: 'd. F Y'

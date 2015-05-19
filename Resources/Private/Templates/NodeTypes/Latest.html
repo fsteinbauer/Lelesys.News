@@ -6,7 +6,7 @@
 	<f:if condition="{newsCollection}">
 		<f:then>
 			<typo3cr:widget.paginate nodes="{newsCollection}" as="paginatedNewsItems" widgetId="{node.name}" configuration="{configuration.pagination}">
-				<div class="row">
+				<div class="news-latest row">
 					<f:for each="{paginatedNewsItems}" as="news">
 						<ts:render path="newsItem" context="{node: news, inputConfiguration: configuration}" />
 					</f:for>
