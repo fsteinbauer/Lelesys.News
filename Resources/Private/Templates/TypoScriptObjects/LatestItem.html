@@ -2,10 +2,10 @@
 {namespace ts=TYPO3\TypoScript\ViewHelpers}
 {namespace m=TYPO3\Media\ViewHelpers}
 
-<div>
+<div class="col-sm-4 col-md-4">
 	<f:if condition="{node.properties.newsImage}">
         <figure class="typo3-neos-alignment-left">
-            <m:image asset="{node.properties.newsImage}" maximumWidth="1140" alt=""/>
+            <m:image asset="{node.properties.newsImage}"  maximumWidth="{configuration.thumbnailMaxWidth}" maximumHeight="{configuration.thumbnailMaxHeight}" alt=""/>
         </figure>
     </f:if>
 	<h5><neos:link.node node="{node}">{title}</neos:link.node></h5>
